@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <title>Carbon Dioxide in the Atmosphere</title>
+  <script src="script.js"></script>
+</body>
+  <!DOCTYPE html>
+  <body style="background-color: #3AAFA9;">
+  <html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>TS4Youth</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 style='color: white; text-align: center; font-size:44px; font-family: Times New Roman;'>Carbon Dioxide in the Atmosphere - Ruining Our Planet</h1>
+
+    </header>
+    <main>
+      <a href="index.html">
+      <button style = 'color: #757575; font-family: Serif; padding: 20px 40px; background-color: white; margin-left: 20px; width: 110px; height: 40px;'>HOME</button>
+      </a>
+      <a href="graphs.html">
+      <button style = 'color: #757575; font-family: Serif; padding: 20px 40px; background-color: white; margin-left: 30px; width: 110px; height: 40px;'>Visualize the Data</button>
+      </a>
+      <a href="forms.html">
+      <button style = 'color: #757575; font-family: Serif; padding: 20px 40px; background-color: white; margin-left: 30px; width: 110px; height: 40px;'>FEEDBACK</button>
+      </a>
+      
+      <p><br><br></p>
+    
+
+
+      <h2 style = 'color: white; font-family: Optima; font-size: 18px'>What does too much Carbon Dioxide do to our atmosphere?</h2>
+      <p style = 'color: white; font-family: Optima; font-size: 16px'>Ever since industrailization began, carbon dioxide levels have been rising. Through combustion, burning fossils for gas and even to power our homes, we have relied on carbon for so many things. The problem with this over reliance on carbon means that more than necessary carbon is released into the atmosphere in the form of gas: carbon dioxide. This in turn hurts the planet, as carbon dioxide gas increases the global temperature to levels higher than natural.  </p>
+      
+
+      
+
+  </body>
+  </html>
+</html>
