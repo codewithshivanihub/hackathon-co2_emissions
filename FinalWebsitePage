@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<body style="background-color: #C6AC8F;">
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Dioxide in the Atmosphere</title>
+</head>
+
+</body>
+
+  <header>
+    <h1 style='color: white; text-align: center; font-size:44px; font-family: Times New Roman;'>Learn More</h1>
+  </header>
+  <div style='display: flex; justify-content: center; gap: 40px'>
+    <a href="index.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>HOME</button>
+    </a>
+    <a href="graphs.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>DATA</button>
+    </a>
+    <a href="forms.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; text-align: center; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>LEARN</button>
+    </a>
+  </div>
+  <p><br><br></p>
+  <p style='font-family: Optima; color: white'>All in all, protecting the planet is something we should work towards. Reducing our carbon footprint, reducing carbon dioxide issions, and turning towards greener resources will not only benefit Earth but also us as individuals. If everyone helps in one small way, we can save our planet together.</p>
+  <p><br><br></p>
+  <p style='font-family: Optima; color: white'>Here is a Logistic Model that shows predictions for CO2 emissions in the US in future years. Note that these values are ONLY estimates, but they provide a general idea of CO2 trends in the past hundreds of years.</p>
+  <img style='height: 160px; width: 320px' src = 'Screenshot 2025-08-08 at 1.28.26 PM.png'>
+
+  <ul style='color: white; font-family: Optima'>
+    <li>2030:6,381,119,000.0 tons </li>
+    <li>2050: 6,656,528,000.0 tons </li>
+    <li>2100: 6,890,783,000.0 tons </li>
+    <li>2150: 6,930,755,000.0 tons</li>
+  </ul>
+
+
+  <p style='font-family: Optima; color: white'>Want to Learn More?<br>Here are some resources:<br>- https://education.nationalgeographic.org/resource/carbon-dioxide-levels-are-record-high-heres-what-you-need-know/<br>- https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide</p>
