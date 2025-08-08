@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body style="background-color: #C6AC8F;">
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Dioxide in the Atmosphere</title>
+</head>
+
+</body>
+
+  <header>
+    <h1 style='color: white; text-align: center; font-size:44px; font-family: Times New Roman;'>Learn More</h1>
+  </header>
+  <div style='display: flex; justify-content: center; gap: 40px'>
+    <a href="index.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>HOME</button>
+    </a>
+    <a href="graphs.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>DATA</button>
+    </a>
+    <a href="forms.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; text-align: center; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>LEARN</button>
+    </a>
+  </div>
+  <p><br><br></p>
+  <p>All in all, protecting the planet is something we should work towards. Reducing our carbon footprint, reducing carbon dioxide issions, and turning towards greener resources will not only benefit Earth but also us as individuals. If everyone helps in one small way, we can save our planet together.</p>
+  
