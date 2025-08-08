@@ -1,0 +1,128 @@
+
+  <!DOCTYPE html>
+  <body style="background-color: #C6AC8F;">
+  <html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Carbon Dioxide in the Atmosphere</title>
+  </head>
+
+  </body>
+
+    <header>
+      <h1 style='color: white; text-align: center; font-size:44px; font-family: Times New Roman;'>Carbon Dioxide in the Atmosphere - Ruining Our Planet</h1>
+
+    </header>
+    
+    <main>
+      <div style='display: flex; justify-content: center; gap: 40px'>
+        <a href="index.html">
+        <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>HOME</button>
+        </a>
+        <a href="graphs.html">
+        <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>DATA</button>
+        </a>
+        <a href="forms.html">
+        <button style = 'color: #757575; font-size: 14px; font-family: Serif; text-align: center; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>LEARN</button>
+        </a>
+      </div>
+      <p><br><br></p>
+    
+
+
+      <h2 style = 'color: white; font-family: Optima; font-size: 18px'>What does too much Carbon Dioxide do to our atmosphere?</h2>
+      <p style = 'color: white; font-family: Optima; font-size: 16px'>Ever since industrialization began, carbon dioxide levels have been rising. Through combustion, burning fossils for gas and even to power our homes, we have relied on carbon for so many things. The problem with this over reliance on carbon means that more than necessary carbon is released into the atmosphere in the form of gas: carbon dioxide. Through photsynthesis, plants remove this carbon dioxide from the atmosphere to produce energy, but we are burning these plants, releasing that carbon dioxide back into the atmosphere. This in turn hurts the planet, as carbon dioxide gas increases the global temperature to levels higher than normal.<br><br> Carbon dioxide, in the atmosphere, absorbs heat and releases it in every direction. So, more carbon dioxide means a warmer planet. Some of the many effects of excess carbon dioxide in the atmosphere include: </p>
+      <ul style='color: white; font-family: Optima'>
+        <li>Higher temperatures</li>
+        <li>Extreme Weather: Droughts, Floods, Wildfires</li>
+        <li>Increased Ocean Acidification: Leads to Sea Animals Dying</li>
+        <li>Respiratory Diseases</li>
+        <li>Species Extinction</li>
+      </ul>
+      <p><br><br></p>
+      <div style='display: flex; gap: 60px'>
+        <img style='height: 160px; width: 320px' src="co2_rate.jpg">
+        <p style='color: white; font-family: Helvetica; font-size: 16px'>This graph shows Carbon Dioxide Emissions in the United States from 1751 to 2017.<br>Notice how emissions before industrialization were at around 0 tons and have rapidly increased over the years.</p>
+      </div>
+      
+      <div style='margin-top: 40px; padding: 20px; background-color: rgba(255,255,255,0.1); border-radius: 10px;'>
+        <h3 style='color: white; font-family: Optima;'>Look up CO2 emissions for a specific year:</h3>
+        <input type="number" id="yearInput" placeholder="Enter year (1751-2017)" min="1751" max="2017" 
+               style='padding: 10px; margin: 10px; border-radius: 5px; border: none; width: 200px;'>
+        <button onclick="getCO2Data()" 
+                style='padding: 10px 20px; margin: 10px; background-color: white; border: none; border-radius: 5px; cursor: pointer;'>
+          Get CO2 Data
+        </button>
+        <p id="result" style='color: white; font-family: Optima; font-size: 16px; margin-top: 20px;'></p>
+      </div>
+
+      <script>
+        let usaData = [];
+
+        // Load CSV data when page loads
+        async function loadCO2Data() {
+          try {
+            const response = await fetch('co2_emission.csv');
+            const csvText = await response.text();
+            
+            const lines = csvText.split('\n');
+            const headers = lines[0].split(',');
+            
+            // Parse CSV and filter for USA data
+            for (let i = 1; i < lines.length; i++) {
+              const line = lines[i].trim();
+              if (line) {
+                const values = line.split(',');
+                const code = values[1];
+                const year = parseInt(values[2]);
+                const emissions = parseFloat(values[3]);
+                
+                if (code === 'USA' && !isNaN(year) && !isNaN(emissions)) {
+                  usaData.push({ year: year, emissions: emissions });
+                }
+              }
+            }
+            
+            console.log(`Loaded ${usaData.length} USA CO2 records`);
+          } catch (error) {
+            console.error('Error loading CO2 data:', error);
+          }
+        }
+
+        function getCO2Data() {
+          const yearInput = document.getElementById('yearInput');
+          const result = document.getElementById('result');
+          const userAsk = parseInt(yearInput.value);
+          
+          if (userAsk < 1751 || userAsk > 2017) {
+            result.textContent = 'Please choose a year between 1751 and 2017.';
+            result.style.color = '#ffcccc';
+            return;
+          }
+          
+          // Find data for the requested year
+          const yearData = usaData.find(data => data.year === userAsk);
+          
+          if (yearData) {
+            result.textContent = `During ${userAsk}, there were about ${yearData.emissions.toLocaleString()} tons of CO2 emitted in the United States.`;
+            result.style.color = 'white';
+          } else {
+            result.textContent = `Data not available for ${userAsk}. Please try another year.`;
+            result.style.color = '#ffcccc';
+          }
+        }
+
+        // Load data when page loads
+        window.addEventListener('load', loadCO2Data);
+        
+        // Allow Enter key to trigger the search
+        document.getElementById('yearInput').addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+            getCO2Data();
+          }
+        });
+      </script>
+  </main>
+  </body>
+  </html>
+</html>
