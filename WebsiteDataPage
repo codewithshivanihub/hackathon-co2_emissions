@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<body style="background-color: #C6AC8F;">
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Dioxide in the Atmosphere</title>
+</head>
+
+</body>
+
+  <header>
+    <h1 style='color: white; text-align: center; font-size:44px; font-family: Times New Roman;'>Understanding Carbon Dioxide Trends in the US</h1>
+  </header>
+  <div style='display: flex; justify-content: center; gap: 40px'>
+    <a href="index.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>HOME</button>
+    </a>
+    <a href="graphs.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>DATA</button>
+    </a>
+    <a href="forms.html">
+    <button style = 'color: #757575; font-size: 14px; font-family: Serif; text-align: center; padding: 20px 30px; background-color: white; gap: 60px; width: 110px; height: 40px;'>LEARN</button>
+    </a>
+  </div>
+  <p style='color: white'>The top three countries that contribute to high CO2 emission levels: US, India, and China (as shown below)</p>
+  <p><br><br></p>
+
+  <div style='display: flex; gap:40px; justify-content: center'>
+    <img style='height: 180px; width: 360px' src="co2_rate.jpg">
+    <img style='height: 180px; width: 360px' src="Screenshot 2025-08-07 at 1.50.21 PM.png">
+    <img style='height: 180px; width: 360px' src="Screenshot 2025-08-07 at 1.50.43 PM.png">
+  <p><br><br></p>  
+  </div>
+  <h2 style='color: white; font-family: Optima'>How can we prevent CO2 levels from increasing further? </h2>
+<p style='color: white; font-family: Optima'>While we cannot completely stop the rise of CO2 levels, we can stop it from increasing as quickly.<br>Here are some tips to help you do your part in reducing CO2 emissions:</p>
+<ul style='color: white; font-family: Optima'>
+  <li>Try reusing or recycling more instead of throwing the item away. When compressed, trash can release lots of greehouse gases into the atmosphere.</li>
+  <li>Walk, bike, carpool or take public transportation whenever possible. It is a small step to reducing your carbon footprint.</li>
+  <li>Use more renewable resources instead of relying on fossil fuels all the time</li>
+  <li>If the world slowly started to use more renewable resources, conserve trees and forests, and reduce the amount of fossil fuels burned, the state of climate change will improve immensely.</li>
+</ul>
+  
